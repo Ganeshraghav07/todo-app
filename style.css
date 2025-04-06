@@ -1,0 +1,113 @@
+/* Reset & Base */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  body {
+    font-family: 'Poppins', sans-serif;
+    background: linear-gradient(to right top, #c9d6ff, #e2e2e2);
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: start;
+    padding-top: 60px;
+    color: #333;
+  }
+  
+  /* Add Google Fonts */
+  @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap');
+  
+  h1 {
+    font-size: 3rem;
+    font-weight: 600;
+    background: linear-gradient(90deg, #6c63ff, #4e91f1);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    margin-bottom: 40px;
+  }
+  
+  /* Input + Button Layout */
+  input[type="text"] {
+    padding: 14px 18px;
+    border-radius: 14px;
+    border: none;
+    font-size: 16px;
+    width: 280px;
+    outline: none;
+    background: rgba(255, 255, 255, 0.7);
+    backdrop-filter: blur(10px);
+    box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+    margin-right: 12px;
+    transition: all 0.3s ease;
+  }
+  
+  input[type="text"]:focus {
+    transform: scale(1.02);
+    box-shadow: 0 6px 16px rgba(0,0,0,0.2);
+  }
+  
+  button {
+    padding: 14px 22px;
+    font-size: 16px;
+    font-weight: bold;
+    border: none;
+    border-radius: 14px;
+    cursor: pointer;
+    background: linear-gradient(135deg, #6c63ff, #4e91f1);
+    color: white;
+    box-shadow: 0 6px 20px rgba(76, 110, 245, 0.3);
+    transition: all 0.3s ease;
+  }
+  
+  button:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 10px 30px rgba(76, 110, 245, 0.5);
+  }
+  
+  /* List Styling */
+  ul {
+    list-style-type: none;
+    margin-top: 50px;
+    width: 380px;
+  }
+  
+  li {
+    background: rgba(255, 255, 255, 0.8);
+    border-radius: 14px;
+    padding: 16px 20px;
+    margin-bottom: 20px;
+    box-shadow: 0 8px 24px rgba(0, 0, 0, 0.08);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    backdrop-filter: blur(10px);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+  }
+  
+  li:hover {
+    transform: scale(1.02);
+    box-shadow: 0 12px 32px rgba(0, 0, 0, 0.12);
+  }
+  
+  /* Delete Button */
+  .delete {
+    background: #ff4d4d;
+    padding: 8px 14px;
+    border: none;
+    border-radius: 10px;
+    font-size: 14px;
+    color: white;
+    font-weight: 500;
+    cursor: pointer;
+    transition: background 0.3s ease, transform 0.2s ease;
+  }
+  
+  .delete:hover {
+    background: #e60023;
+    transform: scale(1.1);
+  }
+  
+  
